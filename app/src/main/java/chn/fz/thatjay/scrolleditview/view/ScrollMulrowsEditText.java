@@ -23,25 +23,21 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
 
     private int mVert = 0;
 
-    private Context mContext;
 
     public ScrollMulrowsEditText(Context context) {
-        this(context, null);
+        super(context);
     }
 
     public ScrollMulrowsEditText(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
+        initAttribute(context, attrs, 0);
     }
 
     public ScrollMulrowsEditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        mContext = context;
-        init();
         initAttribute(context, attrs, defStyleAttr);
     }
 
-    private void init() {
-    }
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
@@ -62,7 +58,7 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
         paddingBottom = getTotalPaddingBottom();
 
         //获得控件的实际高度
-        height = mHeight;  //getHeight();
+        height = mHeight; // getHeight()
 
         //计算滑动距离的边界
         mOffsetHeight = mLayoutHeight + paddingTop + paddingBottom - height;
