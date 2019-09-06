@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingTop="20dip"
+            android:paddingBottom="20dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:orientation="vertical">
+            <TextView
+                android:text="1"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <chn.fz.thatjay.scrolleditview.view.ScrollMulrowsEditText
+                    android:id="@+id/edittext1"
+                    android:padding="14dip"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:textColorHint="#A7A7A7"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:text="房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房"
+                    android:maxLength="300"
+                    android:background="@drawable/linebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dip"
+                    app:height="110dip"/>
+                <TextView
+                    android:id="@+id/text1"
+                    android:text="0/300"
+                    android:paddingRight="22dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:text="2"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <chn.fz.thatjay.scrolleditview.view.ScrollMulrowsEditText
+                    android:id="@+id/edittext2"
+                    android:layout_marginTop="10dip"
+                    android:padding="14dip"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:textColorHint="#A7A7A7"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:text="房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房"
+                    android:maxLength="300"
+                    android:background="@drawable/linebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dip"
+                    app:height="130dip"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:text="0/300"
+                    android:paddingRight="22dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:text="3"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <chn.fz.thatjay.scrolleditview.view.ScrollMulrowsEditText
+                    android:id="@+id/edittext3"
+                    android:layout_marginTop="10dip"
+                    android:padding="14dip"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:textColorHint="#A7A7A7"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:text="房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房"
+                    android:maxLength="300"
+                    android:background="@drawable/linebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    app:height="150dip"/>
+                <TextView
+                    android:id="@+id/text3"
+                    android:text="0/300"
+                    android:paddingRight="22dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <chn.fz.thatjay.scrolleditview.view.ScrollMulrowsEditText
+                    android:id="@+id/edittext4"
+                    android:layout_marginTop="10dip"
+                    android:padding="14dip"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:textColorHint="#A7A7A7"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:maxLength="300"
+                    android:background="@drawable/linebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dip"
+                    app:height="120dip"/>
+                <TextView
+                    android:id="@+id/text4"
+                    android:text="0/300"
+                    android:paddingRight="22dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:text="5"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <chn.fz.thatjay.scrolleditview.view.ScrollMulrowsEditText
+                    android:id="@+id/edittext5"
+                    android:layout_marginTop="10dip"
+                    android:padding="14dip"
+                    android:textSize="16sp"
+                    android:textColor="#353535"
+                    android:textColorHint="#A7A7A7"
+                    android:gravity="top"
+                    android:hint="请输入"
+                    android:text="房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房史蒂夫舒服舒服撒路附近酸辣粉健身房"
+                    android:maxLength="300"
+                    android:background="@drawable/linebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    app:height="100dip"/>
+                <TextView
+                    android:id="@+id/text5"
+                    android:text="0/300"
+                    android:paddingRight="22dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dip"
+                android:text="6"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:background="@android:color/holo_blue_light"
+                android:layout_height="60dip" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>
