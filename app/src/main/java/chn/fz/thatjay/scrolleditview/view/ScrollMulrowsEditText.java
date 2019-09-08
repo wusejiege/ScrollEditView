@@ -64,6 +64,9 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
         mOffsetHeight = mLayoutHeight + paddingTop + paddingBottom - height;
 
         setOnTouchListener();
+        if(getId() == R.id.edittext2) {
+            Log.d(TAG, "ffffaaaa onMeasure == " + mOffsetHeight);
+        }
     }
 
     private void initAttribute(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -72,7 +75,7 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
         for (int i = 0; i < count; i++) {
             int attr = array.getIndex(i);
             switch (attr) {
-                case R.styleable.ScrollMulrowsEditText_height:
+                case R.styleable.ScrollMulrowsEditText_sc_mul_edit_height:
                     mHeight = array.getDimensionPixelSize(attr, 0);
                     break;
             }
@@ -84,7 +87,9 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
     protected void onScrollChanged(int horiz, int vert, int oldHoriz, int oldVert) {
         super.onScrollChanged(horiz, vert, oldHoriz, oldVert);
         mVert = vert;
-        Log.d(TAG,"mOffsetHeight == " + mOffsetHeight + "  ,, vert ===  " + vert );
+        if(getId() == R.id.edittext2){
+            Log.d(TAG,"ffffaaaa mOffsetHeight == " + mOffsetHeight + "  ,, vert ===  " + vert );
+        }
         if (vert == mOffsetHeight || vert == 0) {
             //这里触发父布局或祖父布局的滑动事件
             getParent().requestDisallowInterceptTouchEvent(false);
@@ -115,13 +120,13 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
                 }
                 Log.d(TAG, "event.getY" + event.getY());//edittext 如果在最边缘，getY得到的也不是固定的值
                 if(canScrollVertically(1)){//可以向下滚动
-                    if(isUpperEdge() && event.getY() >= scrollBeginY){
+                    if(isUpperEdge() && event.getY() >= scrollBeginY){//已经在上边缘，向下手势滑动
                         v.getParent().requestDisallowInterceptTouchEvent(false);//交给父布局
                     } else {
                         v.getParent().requestDisallowInterceptTouchEvent(true);
                     }
-                } else if(canScrollVertically(-1)){
-                    if(isLowerEdge() && event.getY() <= scrollBeginY){
+                } else if(canScrollVertically(-1)){//可以向上滚动
+                    if(isLowerEdge() && event.getY() <= scrollBeginY){//已经在下边缘，向上手势滑动
                         v.getParent().requestDisallowInterceptTouchEvent(false);//交给父布局
                     } else {
                         v.getParent().requestDisallowInterceptTouchEvent(true);
@@ -129,7 +134,8 @@ public class ScrollMulrowsEditText extends AppCompatEditText {
                 } else {
                     v.getParent().requestDisallowInterceptTouchEvent(false);//交给父布局
                 }
-                //getY  下== 小
+                //getY  手机屏幕上边 getY  值小
+                //getY  手机屏幕下边 getY  值大
                 return false;
             }
         });

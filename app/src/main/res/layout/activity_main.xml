@@ -45,7 +45,7 @@
                     android:background="@drawable/linebg"
                     android:layout_width="match_parent"
                     android:layout_height="110dip"
-                    app:height="110dip"/>
+                    app:sc_mul_edit_height="110dip"/>
                 <TextView
                     android:id="@+id/text1"
                     android:text="0/300"
@@ -84,7 +84,7 @@
                     android:background="@drawable/linebg"
                     android:layout_width="match_parent"
                     android:layout_height="130dip"
-                    app:height="130dip"/>
+                    app:sc_mul_edit_height="130dip"/>
                 <TextView
                     android:id="@+id/text2"
                     android:text="0/300"
@@ -123,7 +123,7 @@
                     android:background="@drawable/linebg"
                     android:layout_width="match_parent"
                     android:layout_height="150dip"
-                    app:height="150dip"/>
+                    app:sc_mul_edit_height="150dip"/>
                 <TextView
                     android:id="@+id/text3"
                     android:text="0/300"
@@ -161,7 +161,7 @@
                     android:background="@drawable/linebg"
                     android:layout_width="match_parent"
                     android:layout_height="120dip"
-                    app:height="120dip"/>
+                    app:sc_mul_edit_height="120dip"/>
                 <TextView
                     android:id="@+id/text4"
                     android:text="0/300"
@@ -200,7 +200,7 @@
                     android:background="@drawable/linebg"
                     android:layout_width="match_parent"
                     android:layout_height="100dip"
-                    app:height="100dip"/>
+                    app:sc_mul_edit_height="100dip"/>
                 <TextView
                     android:id="@+id/text5"
                     android:text="0/300"
